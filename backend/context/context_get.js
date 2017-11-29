@@ -33,7 +33,7 @@ exports.handler = function(event, context) {
               Username: tweet.user.name,
               Id: tweet.id_str,
               Timestamp: Math.floor((new Date().getTime())/1000),
-              Expirationtime: Math.floor((new Date().getTime()+2000)/1000),
+              Expirationtime: Math.floor((new Date().getTime()+15*60*1000)/1000),
               Location:tweet.user.location
           }
       }
